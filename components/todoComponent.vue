@@ -2,7 +2,7 @@
   <div>
     <form class="flex flex-wrap" @submit.prevent="addToList()">
       <input
-        v-model="externalTask"
+        v-model="newTask"
         type="text"
         class="w-full border p-4 bg-gray-200 border rounded my-4"
       />
