@@ -1,13 +1,5 @@
 <template>
-  <div class="container">
-    <div>
-      <h1 class="title">
-        nuxtToDo
-      </h1>
-    </div>
+  <div class="container mx-auto">
+    <todo-component :external-task="parentTask" />
   </div>
 </template>
-
-<script>
-export default {}
-</script>
