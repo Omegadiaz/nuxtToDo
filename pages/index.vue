@@ -1,33 +1,17 @@
 <template>
   <div class="container">
+    <todo-component :external-task="parentTask" />
     <div>
-      <h1 class="title">El TODO de {{ newTask }}</h1>
+      <h1 class="title">El TODO de Gabri</h1>
     </div>
-    <div>
-      <form class="flex flex-wrap">
-        <input
-          v-model="newTask"
-          type="text"
-          class="w-full border p-4 bg-gray-200 border rounded my-4"
-        />
-        <button class="w-full bg-blue-600 rounded p-2 text-white">
-          Añadir tarea
-        </button>
-      </form>
-      <div>
-        <ul>
-          <li>Tarea</li>
-        </ul>
-      </div>
-    </div>
+    <input class="bg-green-300" v-model="parentTask" type="text" />
   </div>
 </template>
-
 <script>
 export default {
   data() {
     return {
-      newTask: '',
+      parentTask: '',
     }
   },
 }
