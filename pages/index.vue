@@ -4,14 +4,21 @@
       <h1 class="title">El TODO de {{ newTask }}</h1>
     </div>
     <div>
-      <form>
+      <form class="flex flex-wrap">
         <input
           v-model="newTask"
           type="text"
-          class="border bg-green p-4 bg-green-500"
+          class="w-full border p-4 bg-gray-200 border rounded my-4"
         />
-        <button></button>
+        <button class="w-full bg-blue-600 rounded p-2 text-white">
+          Añadir tarea
+        </button>
       </form>
+      <div>
+        <ul>
+          <li>Tarea</li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
