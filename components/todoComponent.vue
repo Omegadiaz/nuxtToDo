@@ -35,13 +35,6 @@
 </template>
 <script>
 export default {
-  props: {
-    externalTask: {
-      type: String,
-      required: false,
-      default: '',
-    },
-  },
   data() {
     return {
       newTask: '',
@@ -50,7 +43,7 @@ export default {
   },
   methods: {
     addToList() {
-      this.allTasks.push(this.externalTask)
+      this.allTasks.push(this.newTask)
     },
     deleteTask(index) {
       this.allTasks.splice(index, 1)
