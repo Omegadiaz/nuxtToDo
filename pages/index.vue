@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <h1 class="title">
-        nuxtToDo
+        El TODO de Gabri
       </h1>
     </div>
   </div>
